@@ -35,4 +35,4 @@ Welcome to the Diabetes Prediction System project! This system aims to predict t
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/OnpointSoftwares/Diabetes-Prediction-Using-Random-Forest-Classifier
+
