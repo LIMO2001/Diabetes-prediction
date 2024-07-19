@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction Chatbot</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <style>
+        /* Add the CSS code here */
+    </style>
+</head>
+<body>
+<div class="chatbot-container">
+    <div class="chatbot">
+        <div class="chatbot-header">
+            <h3>Diabetes Prediction Assistant</h3>
+        </div>
+        <div class="chatbot-body">
+            <div class="form-content">
+                <div class="form-items">
+                    <form action="result" class="requires-validation" novalidate method="POST" required>
+                        <div class="form-group">
+                            <label for="age">How old are you?</label>
+                            <input class="form-control" type="text" name="age" placeholder="Age" required>
+                            <div class="invalid-feedback">Please enter your age.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hypertension">What is the  hypertension Rate?</label>
+                            <input class="form-control" type="text" name="hypertension" placeholder="Hypertension" required>
+                            <div class="invalid-feedback">Please enter your hypertension status.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="heart_disease">Do you have heart disease?</label>
+                            <select class="form-control" name="heart_disease" required>
+                                <option value="" disabled selected>Heart Disease</option>
+                                <option value="1">Negative</option>
+                                <option value="0">Positive</option>
+                            </select>
+                            <div class="invalid-feedback">Please select your heart disease status.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bmi">What is your BMI?</label>
+                            <input class="form-control" type="text" name="bmi" placeholder="BMI" required>
+                            <div class="invalid-feedback">Please enter your BMI.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="HbA1c_level">What is your HbA1c level?</label>
+                            <input class="form-control" type="text" name="HbA1c_level" placeholder="HbA1c Level" required>
+                            <div class="invalid-feedback">Please enter your HbA1c level.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="blood_glucose_level">What is your blood glucose level?</label>
+                            <input class="form-control" type="text" name="blood_glucose_level" placeholder="Blood Glucose Level" required>
+                            <div class="invalid-feedback">Please enter your blood glucose level.</div>
+                        </div>
+
+                        <div class="form-button mt-3">
+                            <button id="submit" type="submit" class="btn btn-primary">Predict</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
